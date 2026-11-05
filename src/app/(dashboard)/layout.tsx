@@ -4,7 +4,7 @@ import { useRouter, usePathname } from 'next/navigation';
 import Link from 'next/link';
 
 const NAV_ITEMS = [
-  { href: '/', icon: '📊', label: 'Dashboard' },
+  { href: '/dashboard', icon: '📊', label: 'Dashboard' },
   { href: '/orders', icon: '📋', label: 'Đơn hàng' },
   { href: '/products', icon: '📦', label: 'Sản phẩm' },
   { href: '/inventory', icon: '🏪', label: 'Kho hàng' },
@@ -62,7 +62,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
         {/* Nav */}
         <nav className="flex-1 overflow-y-auto py-4 px-2 space-y-1">
           {NAV_ITEMS.map(item => {
-            const isActive = item.href === '/' ? pathname === '/' : pathname.startsWith(item.href);
+            const isActive = item.href === '/dashboard' ? pathname === '/dashboard' : pathname.startsWith(item.href);
             return (
               <Link key={item.href} href={item.href}
                 className={`sidebar-nav-item ${isActive ? 'active' : 'inactive'}`}>
