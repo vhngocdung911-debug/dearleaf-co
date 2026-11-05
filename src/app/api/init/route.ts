@@ -96,7 +96,9 @@ export async function GET(request: Request) {
 
     return NextResponse.json({ 
       success: true, 
-      message: 'Database initialized successfully with tables and seed data!' 
+      message: 'Database initialized successfully with tables and seed data!',
+      dbPath: dbPath,
+      cwd: process.cwd() 
     });
   } catch (error: any) {
     return NextResponse.json({ error: error.message }, { status: 500 });
