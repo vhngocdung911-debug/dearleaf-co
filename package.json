@@ -1,7 +1,7 @@
 {
   "name": "dearleaf-erp",
   "version": "1.0.0",
-  "description": "Dearleaf ERP - Hệ thống quản lý bán hàng cây tùng Noel",
+  "description": "Dearleaf ERP - H\u1ec7 th\u1ed1ng qu\u1ea3n l\u00fd b\u00e1n h\u00e0ng c\u00e2y t\u00f9ng Noel",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -50,7 +50,11 @@
     "cookies-next": "^4.2.1",
     "sharp": "^0.33.4",
     "multer": "^1.4.5-lts.1",
-    "uuid": "^10.0.0"
+    "uuid": "^10.0.0",
+    "tailwindcss-animate": "^1.0.7",
+    "tailwindcss": "^3.4.1",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8"
   },
   "devDependencies": {
     "@types/node": "^20",
@@ -63,10 +67,6 @@
     "@types/multer": "^1.4.11",
     "@types/uuid": "^10.0.0",
     "typescript": "^5",
-    "tailwindcss": "^3.4.1",
-    "tailwindcss-animate": "^1.0.7",
-    "autoprefixer": "^10.4.19",
-    "postcss": "^8",
     "eslint": "^8",
     "eslint-config-next": "14.2.5"
   }
