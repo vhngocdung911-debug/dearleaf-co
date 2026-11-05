@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getDb } from '@/lib/db';
 import { getUserFromRequest } from '@/lib/auth';
-import { generateCode } from '@/lib/utils';
+import { generateCode } from '@/lib/db';
 
 export async function GET(req: NextRequest) {
   const user = await getUserFromRequest(req);
